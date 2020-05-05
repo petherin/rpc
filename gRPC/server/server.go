@@ -5,7 +5,7 @@ import (
 	"log"
 	"net"
 
-	pb "./src/simple"
+	pb "github.com/petherin/rpc/gRPC/server/src/simple"
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"
 )

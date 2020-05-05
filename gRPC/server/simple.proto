@@ -1,5 +1,7 @@
 syntax = "proto3";
 
+// Defining a proto3 file: https://developers.google.com/protocol-buffers/docs/proto3
+
 // /src/simple/simple.pb.go created with:
 // cd gRPC/server
 // mkdir src
@@ -7,6 +9,10 @@ syntax = "proto3";
 
 package simple;
 
+// This makes the generated proto.pb.go file get saved to
+// `src/simple`
+// 	`src` because we specify src when we run protoc (see above)
+// 	`simple` because that's the package name we've specified in `option go_package`
 option go_package = "/simple";
 
 // Request
